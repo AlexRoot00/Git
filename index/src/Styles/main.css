@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web',sans-serif;
+    
+}
+.background_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+    height:auto;
+    align-items: center;
+    
+  }
+:root{
+    --mainColor: rgba(0, 0, 0, 0.792);
+    --mainColorLight:rgba(167, 164, 184, 0);
+    --secondaryColor:rgb(124, 119, 217);
+    --textColor:rgba(255, 251, 251, 0.933);
+    --textColor_body:rgba(0, 0, 0, 0.933);
+}
+header{
+    
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 0 rem;
+    background-color: var(--mainColor) ;
+    color: var(--textColor);
+}
+nav a{
+    
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(--secondaryColor);
+}
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border:none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+}
+@media only screen and (max-width:1024px){
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+
+    }
+    header nav{
+        position: fixed;
+        top: 0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+}
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: var(--mainColor) ;
+    color: var(--textColor);
+    box-shadow: 0 2px 2px 2px var(--mainColor) ;
+  }
+  .nav-logo {
+    height: 5vmin;
+    pointer-events: none;
+    margin-left: 30%;  
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .nav-logo {
+      animation: nav-logo-spin infinite 2s linear;
+    }
+  }
+  @keyframes nav-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.about_me{
+    position: fixed;
+    top: 10%;
+    left:30%;
+
+    align-items: center;
+    justify-self: center;
+}
+.home{
+  background-color: var(--mainColor) ;
+
+}
+.Not_Found{
+  background-color: var(--mainColor) ;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%s;
+    width:20%;
+    height:20%;
+    align-items: center;
+}
